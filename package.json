@@ -1,0 +1,15 @@
+{
+  "name": "tailwindtodolist",
+  "version": "1.0.0",
+  "description": "Todo List with Tailwind",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Todo",
+    "List"
+  ],
+  "author": "Melih Koç",
+  "license": "MIT"
+}
