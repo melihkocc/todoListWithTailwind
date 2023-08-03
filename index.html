@@ -8,20 +8,27 @@
     <title>Todo List</title>
     <link rel="stylesheet" href="styles/style.css">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
-<body>
-    <div class="max-w-sm rounded overflow-hidden shadow-lg">
-        <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains">
-        <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-          <p class="text-gray-700 text-base">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-          </p>
+<body class="h-screen">
+    <div id="todoCard" class="rounded overflow-hidden bg-white shadow-2xl m-0 p-0">
+        <h1 class="text-center text-4xl font-semibold text-blue-500 my-7">Todo List</h1>
+        <div class="px-6 py-4 flex items-center">
+            <input type="text" id="input" class="border-2 w-11/12 block h-10 mx-2" placeholder="Görev girin...">
+            <i id="plusButton" class="fa-solid fa-plus cursor-pointer bg-blue-500 text-white m-0 p-3"></i>
         </div>
-        <div class="px-6 pt-4 pb-2">
-          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+        <div class="px-6 pt-4 pb-10">
+            <div class="flex items-center justify-between border-b-2 py-4 m-auto w-full">
+                <span class="inputValue overflow-hidden whitespace-nowrap overflow-ellipsis">Udemy fdasfdsfsadfasfdsfadsfassadfadsfasdf Eğitimi Satın</span>
+                <div>
+                    <i class="fa-solid fa-check p-1 bg-blue-500 text-white cursor-pointer"></i>
+                    <i class="fa-solid fa-pen-to-square p-1 bg-blue-500 text-white cursor-pointer"></i>
+                    <i class="fa-solid fa-trash p-1 bg-blue-500 text-white cursor-pointer"></i>
+                </div>
+            </div>
         </div>
+    </div>
+
+    <script src="scripts/app.js"></script>
 </body>
 </html>
