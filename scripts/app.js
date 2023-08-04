@@ -85,13 +85,14 @@ function editTodo(id){
 const allButton =  document.getElementById("allButton")
 const activeButton = document.getElementById("activeButton")
 const completedButton = document.getElementById("completedButton")
-
+const buttons = [allButton,activeButton,completedButton]
 
 
 activeButton.addEventListener("click",()=>{
+    [...buttons].map(button=>{
+        button.classList.remove("clicked")
+    })
     activeButton.classList.add("clicked")
-    allButton.classList.remove("clicked")
-    completedButton.classList.remove("clicked")
     activeButton.disabled = true
     allButton.disabled = false
     completedButton.disabled = false
@@ -99,9 +100,10 @@ activeButton.addEventListener("click",()=>{
 })
 
 allButton.addEventListener("click",()=>{
+    [...buttons].map(button=>{
+        button.classList.remove("clicked")
+    })
     allButton.classList.add("clicked")
-    activeButton.classList.remove("clicked")
-    completedButton.classList.remove("clicked")
     activeButton.disabled = false
     allButton.disabled = true
     completedButton.disabled = false
@@ -109,9 +111,10 @@ allButton.addEventListener("click",()=>{
 })
 
 completedButton.addEventListener("click",()=>{
+    [...buttons].map(button=>{
+        button.classList.remove("clicked")
+    })
     completedButton.classList.add("clicked")
-    activeButton.classList.remove("clicked")
-    allButton.classList.remove("clicked")
     activeButton.disabled = false
     allButton.disabled = false
     completedButton.disabled = true
