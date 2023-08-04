@@ -11,20 +11,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body class="h-screen">
-    <div id="todoCard" class="rounded overflow-hidden bg-white shadow-2xl m-0 p-0">
-        <h1 class="text-center text-4xl font-semibold text-blue-500 my-7">Todo List</h1>
-        <div class="px-6 py-4 flex items-center">
-            <input type="text" id="input" class="border-2 w-11/12 block h-10 mx-2" placeholder="Görev girin...">
-            <i id="plusButton" class="fa-solid fa-plus cursor-pointer bg-blue-500 text-white m-0 p-3"></i>
+    <div class="flex flex-col items-center">
+        <div class="buttonsDiv mb-10 mt-10">
+            <button class="mx-5 text-white px-2" id="allButton">All</button>
+            <button class="mx-5 text-white px-2" id="activeButton">Active</button>
+            <button class="mx-5 text-white px-2" id="completedButton">Completed</button>
         </div>
-        <div class="px-6 pt-4 pb-10">
-            <div class="flex items-center justify-between border-b-2 py-4 m-auto w-full">
-                <span class="inputValue overflow-hidden whitespace-nowrap overflow-ellipsis">Udemy fdasfdsfsadfasfdsfadsfassadfadsfasdf Eğitimi Satın</span>
-                <div>
-                    <i class="fa-solid fa-check p-1 bg-blue-500 text-white cursor-pointer"></i>
-                    <i class="fa-solid fa-pen-to-square p-1 bg-blue-500 text-white cursor-pointer"></i>
-                    <i class="fa-solid fa-trash p-1 bg-blue-500 text-white cursor-pointer"></i>
-                </div>
+        <div id="todoCard" class="rounded overflow-hidden bg-white shadow-2xl m-0 p-0 mb-10">
+            <h1 class="text-center text-4xl font-semibold text-blue-500 my-7">Todo List</h1>
+            <div class="px-6 py-4 ">
+                <form id="form" class="flex items-center w-full">
+                    <input type="text" id="input" class="border-2 w-11/12 block h-10 mx-2" placeholder="Görev girin...">
+                    <i id="plusButton" class="fa-solid fa-plus cursor-pointer bg-blue-500 text-white m-0 p-3"></i>
+                </form>
+            </div>
+            <div id="list" class="px-6 pt-4 pb-10">
+
             </div>
         </div>
     </div>
